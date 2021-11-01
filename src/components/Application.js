@@ -22,7 +22,11 @@ export default function Application(props) {
       axios.get("http://localhost:8001/api/interviewers"),
     ])
     .then((all) => {
-      setState(prev => ({...prev, days: all[0].data, appointments: all[1].data, interviewers: all[2].data }));
+      setState(prev => ({
+        ...prev, days: all[0].data, 
+        appointments: all[1].data, 
+        interviewers: all[2].data 
+      }));
     })
     .catch(error => {
       console.log(error.response.status);
@@ -31,6 +35,27 @@ export default function Application(props) {
     });
     
   }, [])
+
+  function bookInterview(id, interview) {
+    console.log(id, interview);
+
+    const appointment = {
+      ...state.appointments[id],
+      interview: { ...interview }
+    };
+
+    const appointments = {
+      ...state.appointments,
+      [id]: appointment
+    };
+
+    setState({
+      ...state,
+      appointments
+    });
+
+    axios.put(`/api/appointments/${id}`, {interview})
+  }
 
   const appointments = getAppointmentsForDay(state, state.day);
   const interviewers = getInterviewersForDay(state, state.day);
@@ -45,6 +70,7 @@ export default function Application(props) {
         time={appointment.time}
         interview={interview}
         interviewers={interviewers}
+        bookInterview={bookInterview}
       />
     );
   });
