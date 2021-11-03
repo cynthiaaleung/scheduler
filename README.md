@@ -28,4 +28,4 @@ npm run storybook
 
 !["Adding an appointment"](https://github.com/cynthiaaleung/scheduler/blob/master/docs/add-appointment.png?raw=true)
 
-!["Deleting an appointment"](https://github.com/cynthiaaleung/scheduler/blob/master/docs/delete-appointment.png?raw=true)
+!["Deleting an appointment"](https://github.com/cynthiaaleung/scheduler/blob/master/docs/deleting-appointment.png?raw=true)
