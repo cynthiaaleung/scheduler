@@ -21,3 +21,11 @@ npm test
 ```sh
 npm run storybook
 ```
+
+## Screenshots
+
+!["All appointments for the selected day"](https://github.com/cynthiaaleung/scheduler/blob/master/docs/appointments-view.png?raw=true)
+
+!["Adding an appointment"](https://github.com/cynthiaaleung/scheduler/blob/master/docs/add-appointment.png?raw=true)
+
+!["Deleting an appointment"](https://github.com/cynthiaaleung/scheduler/blob/master/docs/delete-appointment.png?raw=true)
