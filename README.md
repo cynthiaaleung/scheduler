@@ -5,7 +5,17 @@ Interview Scheduler is a single-page application where students can view, create
 
 ## Tech Stack
 
-React, HTML, SASS, Node.js, Express.js, Axios, PostgreSQL, Cypress, Storybook, Jest, Webpack Dev Server
+- React
+- Node.js
+- Express.js
+- Axios
+- PostgreSQL
+- HTML
+- SASS
+- Cypress
+- Storybook
+- Jest
+- Webpack Dev Server
 
 ## Dependencies
 
