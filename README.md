@@ -69,7 +69,7 @@ The client and API server needs to run concurrently while using PostgreSQL datab
 
 ## Final Product
 ### Daily View
-This page shows all the appointments for Monday. There are currently 3 available slots.
+This page shows all the appointments for Monday. There are currently 3 available slots and 2 booked appointments.
 !["All appointments for the selected day"](https://github.com/cynthiaaleung/scheduler/blob/master/docs/appointments-view.png?raw=true)
 
 ### Creating an Appointment
