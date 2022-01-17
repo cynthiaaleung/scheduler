@@ -5,6 +5,7 @@ Interview Scheduler is a single-page application where students can view, create
 
 ## Tech Stack
 
+- JavaScript
 - React
 - Node.js
 - Express.js
